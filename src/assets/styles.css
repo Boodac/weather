@@ -1,0 +1,15 @@
+body {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#querybox {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+}
