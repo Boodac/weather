@@ -6,7 +6,44 @@
     <title>boodaClimate</title>
 </head>
 <body>
-    <input placeholder="Where?">
-    <button>Query</button>
+    <div id="querybox">
+        <input placeholder="Where?">
+        <button>Query</button>
+    </div>
+    <div id="content">
+        <!-- dynamically generated cards go here -->
+    </div>
+    
+    <template id="currentConditions">
+        <table>
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th>Location:</th>
+                    <th id="resolvedAddress"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Feels Like:</th>
+                    <td id="feelslike"></td>
+                </tr>
+                <tr>
+                    <th>Actual Temp:</th>
+                    <td id="temp"></td>
+                </tr>
+                <tr>
+                    <th>Precipitation</th>
+                    <td id="preciptype"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Condition:</th>
+                    <th id="conditions"></th>
+                </tr>
+            </tfoot>
+        </table>
+    </template>
 </body>
 </html>
